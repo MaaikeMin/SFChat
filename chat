@@ -50,9 +50,7 @@
 				"isExactMatch":true, 
 				"label":"E-mail" 
 				}], 
-				"entityName":"Contact", 
-				"saveToTranscript":"Contact", 
-				"showOnCreate":true 
+				"entityName":"Contact"
 				}]; 
 
 			    
