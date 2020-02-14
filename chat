@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 	<header>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 		<style type='text/css'>
 		h2, p {
 		font-family: "Verdana", sans-serif;
@@ -26,19 +26,14 @@
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
 		var initESW = function(gslbBaseURL) {
-			embedded_svc.settings.displayHelpButton = true; //Or false
-			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
+			embedded_svc.settings.displayHelpButton = true;
+			embedded_svc.settings.language = 'nl_NL';
 			
-			
-			//embedded_svc.settings.onlineText = 'Heb je een vraag?'
-			//embedded_svc.settings.offlineText = 'chat offline'
-			embedded_svc.settings.defaultMinimizedText = "Heb je een vraag?"
-			embedded_svc.settings.disabledMinimizedText = "chat offline"
-			embedded_svc.settings.loadingText = "even geduld a.u.b."
-			
-			
+			embedded_svc.settings.defaultMinimizedText = "Heb je een vraag?";
+			embedded_svc.settings.disabledMinimizedText = "chat offline";
+			embedded_svc.settings.loadingText = "even geduld a.u.b.";	
             
-            		//this extraPrechatInfo should prevent the creation of a new contact in Salesforce
+            		//this extraPrechatInfo prevents the creation of a new contact in Salesforce
 			 embedded_svc.settings.extraPrechatInfo = [{ 
 				"entityFieldMaps":[{ 
 				"doCreate":false, 
