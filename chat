@@ -31,13 +31,11 @@
 			var initESW = function(gslbBaseURL) {
 				embedded_svc.settings.displayHelpButton = true;
 				embedded_svc.settings.language = 'nl_NL';
-				
-				var language = window.navigator.userLanguage || window.navigator.language;
-				alert(language);
 
 				embedded_svc.settings.defaultMinimizedText = 'Heb je een vraag?'; 
 				embedded_svc.settings.disabledMinimizedText = 'Chat offline';
 				embedded_svc.settings.loadingText = 'even geduld a.u.b.';
+				alert(embedded_svc.settings.language)
 				
 				//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
