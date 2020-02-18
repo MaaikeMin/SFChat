@@ -25,12 +25,12 @@
 		
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
-			var language = Intl.Locale;
-			alert ("locale?: " + language);
 		
 			var initESW = function(gslbBaseURL) {
 				embedded_svc.settings.displayHelpButton = true;
 				embedded_svc.settings.language = 'nl_NL';
+				var language = window.navigator.userLanguage || window.navigator.language;
+				alert ("Language: " + language)
 
 				embedded_svc.settings.defaultMinimizedText = 'Heb je een vraag?'; 
 				embedded_svc.settings.disabledMinimizedText = 'Chat offline';
