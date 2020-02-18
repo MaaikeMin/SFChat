@@ -25,8 +25,8 @@
 		
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
-			var language = window.navigator.userLanguage || window.navigator.language;
-			alert(language);
+			var language = document.querySelector('html').getAttribute('lang')
+			alert ("querySelector: " + language)
 		
 			var initESW = function(gslbBaseURL) {
 				embedded_svc.settings.displayHelpButton = true;
@@ -35,7 +35,7 @@
 				embedded_svc.settings.defaultMinimizedText = 'Heb je een vraag?'; 
 				embedded_svc.settings.disabledMinimizedText = 'Chat offline';
 				embedded_svc.settings.loadingText = 'even geduld a.u.b.';
-				alert(embedded_svc.settings.language)
+				// THIS gives nl_NL, but chat still in french alert("embedded svc language: " + embedded_svc.settings.language)
 				
 				//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
