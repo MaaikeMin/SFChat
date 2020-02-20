@@ -40,21 +40,23 @@
 				//Does map case to known contacts (saves time)
 				embedded_svc.settings.extraPrechatInfo = [{
 					"entityFieldMaps":[{
-					"doCreate":false,
-					"doFind":true,
-					"fieldName":"LastName",
-					"isExactMatch":false,
-					"label":"Last Name"
-					},{
-					"doCreate":false,
-					"doFind":true,
-					"fieldName":"FirstName",
-					"isExactMatch":false,
-					"label":"First Name"
-					}, {
-					"doCreate":false,"doFind":true,"fieldName":"Email",
-					"isExactMatch":true,
-					"label":"Email"}],
+						"doCreate":false,
+						"doFind":true,
+						"fieldName":"LastName",
+						"isExactMatch":false,
+						"name":"Last Name"
+						},{
+						"doCreate":false,
+						"doFind":true,
+						"fieldName":"FirstName",
+						"isExactMatch":false,
+						"name":"First Name"
+						}, {
+						"doCreate":false,"doFind":true,
+						"fieldName":"Email",
+						"isExactMatch":true,
+						"name":"Email"
+						}],
 					"entityName":"Contact",
 					"saveToTranscript":
 					"Contact","showOnCreate":true
