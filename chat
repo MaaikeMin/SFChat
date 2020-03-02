@@ -52,14 +52,15 @@
 						"isExactMatch":false,
 						"label":"First Name"
 						}, {
-						"doCreate":false,"doFind":true,
+						"doCreate":false,
+						"doFind":true,
 						"fieldName":"Email",
 						"isExactMatch":true,
 						"label":"Email"
 						}],
 					"entityName":"Contact",
-					"saveToTranscript":
-					"Contact","showOnCreate":true
+					"saveToTranscript":"Contact",
+					"showOnCreate":true
 				}];
 
 				embedded_svc.settings.enabledFeatures = ['LiveAgent'];
